@@ -1,0 +1,8 @@
+FROM microsoft/iis-aspnet45
+MAINTAINER Andrew Wu, https://www.facebook.com/andrewwu.blog.0928
+LABEL Description="Course Of Microservice Demo" Vendor="Andrew Studio" Version="12.15.0.0"
+
+# copy demoweb
+ADD webapp c:/inetpub/wwwroot/
+
+CMD [ "ping", "localhost", "-t" ]
