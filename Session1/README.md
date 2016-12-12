@@ -9,13 +9,13 @@
 
 課程分成四次進行:
 
-1. overview  
+1. **overview**  
 介紹微服務的觀念，以及重要的相關技術 (參考: [Microservices Skill Tree](http://read.html5.qq.com/image?src=forum&q=5&r=0&imgflag=7&imageUrl=http://mmbiz.qpic.cn/mmbiz/MOwlO0INfQqYYBwOC1siaHRwxElHuDybkztrnIvSdDy3UFPDDu3fr5sicBbJoNNwo0bia3iaWZTEpV4SA9QqBa6ong/0?wx_fmt=jpeg))
-1. coding
+1. **coding**  
 介紹開發 "microservices ready" 系統的關鍵技能: API
-1. process
+1. **process**  
 介紹微服務架構從開發到佈署、維運等的流程
-1. proof of concept
+1. **proof of concept**  
 實際的案例，從頭開始一步一步進行，完整的示範微服務從開發到上線維運的過程
 
 
