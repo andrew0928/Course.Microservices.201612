@@ -6,6 +6,9 @@ cls
 rd /s /q WebAPP
 rd /s /q ..\..\DemoWeb\obj\
 "c:\Windows\Microsoft.NET\Framework\v4.0.30319\aspnet_compiler.exe" -v / -p ..\..\DemoWeb -u -f -c WebAPP
+rd /s /q WebAPP\App_Data
+md WebAPP\App_Data
+
 
 ::
 :: test build result in IISExpress
@@ -21,7 +24,7 @@ docker build --force-rm -t=andrew0928/mvcdemo:latest .
 ::
 ::	step 3. PUSH to docker hub
 ::
-REM docker push andrew0928/mvcdemo
+docker push andrew0928/mvcdemo
 
 
 
