@@ -16,9 +16,6 @@ namespace DemoWeb.Controllers
         public ActionResult About()
         {
             ViewBag.ServerIP = this.Request.ServerVariables["LOCAL_ADDR"];
-            //ViewBag.Version = "1.0 alpha";
-            //ViewBag.Version = "1.0 beta";
-            //ViewBag.Version = "1.0 RTM";
             ViewBag.Version = this.GetType().Assembly.GetName().Version.ToString();
 
             return View();
