@@ -36,3 +36,30 @@
 
 * [課程講義](M01.pptx)
 * [Microservices Skill Tree](http://read.html5.qq.com/image?src=forum&q=5&r=0&imgflag=7&imageUrl=http://mmbiz.qpic.cn/mmbiz/MOwlO0INfQqYYBwOC1siaHRwxElHuDybkztrnIvSdDy3UFPDDu3fr5sicBbJoNNwo0bia3iaWZTEpV4SA9QqBa6ong/0?wx_fmt=jpeg)
+
+
+
+# DEMO
+
+1. build my mvc-demo docker image (using script) - @PC
+```powershell
+# 編譯 ASP.NET 指令
+"c:\Windows\Microsoft.NET\Framework\v4.0.30319\aspnet_compiler.exe" -v / -p ..\..\DemoWeb -u -f -c WebAPP
+
+# BUILD image
+docker build --force-rm -t=andrew0928/mvcdemo:latest -t=andrew0928/mvcdemo:1.0 .
+
+# PUBLISH image
+docker push andrew0928/mvcdemo:1.0
+
+```
+
+
+1. deploy my mvc-demo:
+```powershell
+docker run -d --name demo8001 -v c:\Demo\App_Data:c:\Inetpub\wwwroot\App_Data -p 8001:80 andrew0928/mvcdemo
+```
+
+2. deploy 2 instances of mvc-demo
+```
+```

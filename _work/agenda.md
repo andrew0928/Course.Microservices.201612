@@ -171,7 +171,6 @@ API vs Library / Component ?
 * [微服务的漫长历史](http://www.infoq.com/cn/news/2016/11/microservices-history)
 * [Kong Docs: Adding your API](https://getkong.org/docs/0.9.x/getting-started/adding-your-api/)
 * [Kong Docker Images](https://hub.docker.com/_/kong/)
-* [微服务实战（一）：微服务架构的优势与不足](http://dockone.io/article/394)  
 * [從不同的角度看 Microservices](http://blog.maxkit.com.tw/2015/07/microservices_27.html)  
 * [康威定律 Conway's Law](http://blog.maxkit.com.tw/2016/06/conways-law.html)  
 * [Securing Microservices](https://medium.facilelogin.com/securing-microservices-with-oauth-2-0-jwt-and-xacml-d03770a9a838#.d0wus2d1h)
