@@ -180,6 +180,7 @@ API vs Library / Component ?
 * [TFS 2015: Branch strategically](https://www.visualstudio.com/en-us/docs/tfvc/branch-strategically)
 * [MSDN: Learn Git](https://www.visualstudio.com/learn-git/)
 * [恰如其分的 MySQL 設計技巧](http://s.itho.me/modernweb/2016/tracka/Ant_ModernWeb-%E6%81%B0%E5%A6%82%E5%85%B6%E5%88%86%E7%9A%84MySQL%E8%A8%AD%E8%A8%88%E6%8A%80%E5%B7%A7_%E4%BF%AE.pdf)
+* [STUQ小班課《微服務架構與實踐》｜尚度元科技CTO王磊主講](http://www.gegugu.com/2016/10/05/13052.html)
 
 # Schedule
 * 12/15 17:00 ~ 20:00
