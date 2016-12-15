@@ -1,4 +1,9 @@
 # ignore build or compile output
 Session1/codes/Containers/Web/WebAPP/
 Session1/codes/DemoWeb/bin/
+Session1/codes/DemoWeb/obj/
 Session1/codes/DemoWeb/packages/
+
+
+# igonore office temp file
+~$*.pptx
