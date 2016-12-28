@@ -19,12 +19,13 @@ REM "c:\Program Files\IIS Express\iisexpress.exe" /path:%CD%\WebAPP\
 ::	step 2. BUILD docker image
 ::
 docker rmi andrew/mvcdemo
-docker build --force-rm -t=andrew0928/mvcdemo:latest .
+docker build --force-rm -t=andrew0928/mvcdemo:1.5 -t=andrew0928/mvcdemo:latest .
 
 ::
 ::	step 3. PUSH to docker hub
 ::
-docker push andrew0928/mvcdemo
+docker push andrew0928/mvcdemo:latest
+docker push andrew0928/mvcdemo:1.5
 
 
 
