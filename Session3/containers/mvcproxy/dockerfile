@@ -1,0 +1,5 @@
+FROM microsoft/windowsservercore
+
+COPY nginx           /nginx
+COPY start-nginx.cmd /
+COPY reload.cmd      /

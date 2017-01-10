@@ -1,0 +1,43 @@
+version: '2.1'
+services:
+  webapp:
+    image: andrew0928/mvcdemo:1.0
+    volumes:
+      - c:\containers\data:c:\inetpub\wwwroot\app_data
+    ports:
+      - 80
+
+  webapp-test:
+    image: andrew0928/mvcdemo:1.1
+    volumes:
+      - c:\containers\data:c:\inetpub\wwwroot\app_data
+    ports:
+      - 80
+
+  proxy:
+    build: ./mvcproxy
+#    command: ping -t localhost
+    command: start-nginx.cmd
+    depends_on:
+      - webapp
+      - webapp-test
+    ports:
+      - 80:80
+      - 81:81
+
+  console:
+    image: microsoft/windowsservercore
+    command: ping -t localhost
+    depends_on:
+      - webapp
+      - webapp-test
+      - proxy
+
+
+networks:
+  default:
+    external:
+      name: nat
+
+# docker run --name DEMO -d -v c:\containers\data:c:\inetpub\wwwroot\app_data -p 8000:80 andrew0928/mvcdemo:latest
+# docker inspect -f "{{.NetworkSettings.Networks.nat.IPAddress}}" containers_webapp_5
