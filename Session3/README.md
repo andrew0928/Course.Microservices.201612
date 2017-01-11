@@ -75,3 +75,18 @@ eAAAAAJDbGllbnRJRAAJAAAAQW5kcmV3V3UABFRhZ3MAEAAAAAIwAAQAAABCQUQAAAJUeXBlTmFtZQAk
 
 ```
 
+
+
+
+## References
+
+* [Container Network](https://docs.microsoft.com/en-us/virtualization/windowscontainers/manage-containers/container-networking#transparent-network)
+* [Rancher Upgrade](https://github.com/rancher/rancher/issues/2188)
+* [Using Nginx as Http loadbalancer](http://nginx.org/en/docs/http/load_balancing.html)
+* [NGINX LOAD BALANCING – TCP AND UDP LOAD BALANCER](https://www.nginx.com/resources/admin-guide/tcp-load-balancing/)
+* [谈一下关于CQRS架构如何实现高性能](http://www.cnblogs.com/netfocus/p/4055346.html)
+* [Kubernetes、Mesos和Swarm：Rancher编排引擎的比较](http://dockone.io/article/1882)
+* [容器现状：Docker之外的选择、容器编排以及它们对微服务的影响](http://www.infoq.com/cn/articles/container-landscape-2016)
+* [2017年DevOps的5大发展预测](http://www.infoq.com/cn/news/2016/12/2017-DevOps-5-predict)
+* [一次搞懂oAuth與SSO在幹什麼?](http://studyhost.blogspot.tw/2017/01/oauthsso.html)
+* [一种新的进入容器的方式： WebSocket + Docker Remote API](http://dockone.io/article/1920)
