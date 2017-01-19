@@ -7,12 +7,6 @@ services:
     ports:
       - 80
 
-  webapp-test:
-    image: andrew0928/mvcdemo:1.1
-    volumes:
-      - c:\containers\data:c:\inetpub\wwwroot\app_data
-    ports:
-      - 80
 
   proxy:
     build: ./mvcproxy
@@ -30,7 +24,6 @@ services:
     command: ping -t localhost
     depends_on:
       - webapp
-      - webapp-test
       - proxy
 
 
