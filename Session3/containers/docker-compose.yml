@@ -1,9 +1,9 @@
 version: '2.1'
 services:
   webapp:
-    image: andrew0928/mvcdemo:1.0
+    image: andrew0928/vs20
     volumes:
-      - c:\containers\data:c:\inetpub\wwwroot\app_data
+      - .\data:c:\inetpub\wwwroot\app_data
     ports:
       - 80
 
@@ -14,7 +14,7 @@ services:
     command: start-nginx.cmd
     depends_on:
       - webapp
-      - webapp-test
+#      - webapp-test
     ports:
       - 80:80
       - 81:81
@@ -30,7 +30,7 @@ services:
 networks:
   default:
     external:
-      name: nat
+      name: docker-nat
 
 # docker run --name DEMO -d -v c:\containers\data:c:\inetpub\wwwroot\app_data -p 8000:80 andrew0928/mvcdemo:latest
 # docker inspect -f "{{.NetworkSettings.Networks.nat.IPAddress}}" containers_webapp_5
